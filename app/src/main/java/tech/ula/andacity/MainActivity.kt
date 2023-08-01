@@ -1,4 +1,4 @@
-package tech.ula.idle
+package tech.ula.andacity
 
 import android.content.Intent
 import android.os.Bundle
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     fun processIntent(intent: Intent) {
         val ulaIntent = Intent(this, MainActivity::class.java)
-        val app = App("idle","Distribution", "idle", false, true, "false", false, 1)
+        val app = App("andacity", "Distribution", "andacity", false, true, "false", false, 1)
         ulaIntent.putExtra("app", app)
         this.startActivity(ulaIntent)
         finish()
